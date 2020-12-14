@@ -25,5 +25,8 @@ public void method(final String finalParameter){
 
 
 
+## Idea
 
+在`Preferences`-->`Editor`-->`Code Style`-->`Java`-->`Code Generation`中勾选`Make generated parameters final`。
 
+![idea-final-parameters](images/idea-final-parameters.png)
