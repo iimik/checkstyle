@@ -1,6 +1,14 @@
+# CheckStyle
 
 
-# checkstyle
+
+## OverView
+
+![CheckStyle](http://assets.processon.com/chart_image/5fd4b810e401fd06ddbe92a9.png)
+
+[CheckStyle Mind](https://www.processon.com/view/link/5fd770515653bb06f33e1133)
+
+
 
 ## File
 
@@ -1068,12 +1076,6 @@ int a = (1 + 1);
 
 
 
-
-
-
-
-
-
 ## 注释
 
 ### CommentsIndentation
@@ -1103,12 +1105,6 @@ int a = (1 + 1);
 
 
 
-
-
------------------
-
-
-
 ## 插件
 
 * [CheckStyle-IDEA](docs/plugins/CheckStyle-IDEA.md) : IDEA checkstyle 插件。
@@ -1118,7 +1114,7 @@ int a = (1 + 1);
 [![Maven Central](https://img.shields.io/maven-central/v/org.apache.maven.plugins/maven-checkstyle-plugin?label=maven-plugin)](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin)
 [![Maven Central](https://img.shields.io/maven-central/v/com.puppycrawl.tools/checkstyle?label=checkstyle)](https://mvnrepository.com/artifact/com.puppycrawl.tools/checkstyle)
 
-[mvn-checkstyle-plugin](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin)
+
 
 ```xml
 <plugin>
@@ -1128,8 +1124,6 @@ int a = (1 + 1);
         <configLocation>checkstyle.xml</configLocation>
         <!-- include test source -->
         <consoleOutput>true</consoleOutput>
-        <excludes>**/generated-sources/**/*</excludes>
-        <excludes>**/autogen/**/*</excludes>
         <includeTestSourceDirectory>true</includeTestSourceDirectory>
     </configuration>
     <dependencies>
@@ -1156,18 +1150,18 @@ int a = (1 + 1);
 
 
 
-
-
 ## Git Hook
 
 
+
+### pre-commit
 
 ```shell
 #!/bin/sh
 #execute shell before commit,check the code
 
 
-# mvn checkstyle: check
+# mvn checkstyle:check
 mvn checkstyle:check
 #得到checkstyle检测结果，没有代码规范问题 执行结果为0；有代码规范问题 执行结果为非0
 checkstyle_result=$?
