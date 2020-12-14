@@ -4,7 +4,7 @@
 
 ## OverView
 
-![CheckStyle](http://assets.processon.com/chart_image/5fd4b810e401fd06ddbe92a9.png)
+![CheckStyle](CheckStyle.png)
 
 [CheckStyle Mind](https://www.processon.com/view/link/5fd770515653bb06f33e1133)
 
